@@ -10,6 +10,9 @@ html,
 body{
 	height: 100%;
 }
+body{
+  overflow-x: hidden;;
+}
 .box{
   display: flex;
 }
@@ -93,6 +96,18 @@ body{
     a{
       color: #b0bec5;
     }
+  }
+}
+.angle-right{
+  position: relative;
+  padding-left: 15px;
+  &::before{
+    content: "\f105";
+    font-family: "icomoon";
+    position: absolute;
+    color: $green;
+    left: 0;
+    font-size: 14px;
   }
 }
 
